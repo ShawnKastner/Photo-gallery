@@ -18,7 +18,7 @@ function openImg(i) {
     document.getElementById('showBig').innerHTML =`
     <div class="arrows">
         <img onclick="left()" class="icon" src="icon/arrow-left.ico">
-        <img onclick="close()" class="icon" src="icon/x-mark-64.ico">
+        <img onclick="closeImg()" class="icon" src="icon/x-mark-64.ico">
         <img onclick="right()" class="icon" src="icon/arrow-right.ico">
     </div>
     <div class="bigImage">
@@ -30,7 +30,7 @@ function openImg(i) {
 
 }
 
-function close() {
+function closeImg() {
     document.getElementById('showBig').classList.add('d-none');
 }
 
