@@ -43,7 +43,7 @@ body {
 }
 
 .showFull {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
     right: 0;
@@ -55,7 +55,6 @@ body {
 }
 
 .fullImage {
-    width: 800px;
     height: 600px;
     object-fit: cover;
 }
@@ -64,6 +63,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 
 .icon {
