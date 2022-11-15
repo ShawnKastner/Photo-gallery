@@ -21,16 +21,18 @@ body {
 .img_container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .imgBox {
-    margin: 5px;
+    margin: 1px 5px;
 }
 
 .imgBox img {
     object-fit: cover;
-    height: 150px;
+    height: 200px;
     cursor: pointer;
 }
 

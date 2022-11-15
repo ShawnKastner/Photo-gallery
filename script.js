@@ -1,4 +1,4 @@
-let dogImg = ['img/maja1.jpg', 'img/maja2.jpg', 'img/maja3.jpg', 'img/maja4.jpg', 'img/maja5.jpg', 'img/maja6.jpg', 'img/maja7.jpg', 'img/maja9.jpg', 'img/shiva&maja.jpg','img/shiva&maja2.jpg','img/shiva&maja3.jpg','img/shiva&maja7.jpg', 'img/shiva1.jpg', 'img/shiva2.jpg', 'img/shiva3.jpg', 'img/shiva4.jpg', 'img/shiva5.jpg', 'img/shiva6.jpg', 'img/shiva7.jpg','img/maja8.jpg', 'img/shiva8.jpg', 'img/shiva9.jpg', 'img/shiva10.jpg']
+let dogImg = ['img/maja1.jpg', 'img/maja2.jpg', 'img/maja3.jpg', 'img/maja4.jpg', 'img/maja5.jpg', 'img/maja6.jpg', 'img/maja7.jpg', 'img/maja9.jpg', 'img/shiva&maja.jpg','img/shiva&maja2.jpg','img/shiva&maja3.jpg','img/shiva&maja7.jpg', 'img/shiva1.jpg', 'img/shiva2.jpg', 'img/shiva3.jpg', 'img/shiva4.jpg', 'img/shiva5.jpg', 'img/shiva6.jpg', 'img/shiva7.jpg','img/maja8.jpg', 'img/shiva8.jpg', 'img/shiva9.jpg', 'img/shiva10.jpg', 'img/maja10.jpg', 'img/shiva&maja8.jpg']
 let currentImage;
 
 function load() {
