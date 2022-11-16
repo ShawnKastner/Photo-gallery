@@ -28,9 +28,13 @@ body {
 
 .imgBox {
     margin: 1px 5px;
+    flex: 1;
+    min-width: 200px;
+    overflow: hidden;
 }
 
 .imgBox img {
+    width: 100%;
     object-fit: cover;
     height: 200px;
     cursor: pointer;
@@ -86,4 +90,8 @@ body {
     width: 180px;
     display: flex;
     justify-content: space-between;
+}
+
+.overflow {
+    overflow: hidden;
 }

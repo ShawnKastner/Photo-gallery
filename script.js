@@ -29,11 +29,13 @@ function openImg(i) {
     `;
 
     document.getElementById('showBig').classList.remove('d-none');
+    body.classList.add('overflow')
 
 }
 
 function closeImg() {
     document.getElementById('showBig').classList.add('d-none');
+    body.classList.remove('overflow');
 }
 
 function left() {
