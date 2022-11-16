@@ -17,20 +17,22 @@ function load() {
 function openImg(i) {
     currentImage = i;
 
-    document.getElementById('showBig').innerHTML =`
+    document.getElementById('showBig').innerHTML = htmlTemplate(i);
+
+    document.getElementById('showBig').classList.remove('d-none');
+    body.classList.add('overflow')
+}
+
+function htmlTemplate(i) {
+    return `
     <div class="arrows">
         <img onclick="left()" class="icon" src="icon/arrow-left.ico">
         <img onclick="closeImg()" class="icon" src="icon/x-mark-64.ico">
         <img onclick="right()" class="icon" src="icon/arrow-right.ico">
     </div>
-    <div id="container_bigImage" class="bigImage">
-        <img id="image" class="fullImage" src="${dogImg[i]}">
-    </div>
-    `;
-
-    document.getElementById('showBig').classList.remove('d-none');
-    body.classList.add('overflow')
-
+        <div id="container_bigImage" class="bigImage">
+            <img id="image" class="fullImage" src="${dogImg[i]}">
+        </div>`;
 }
 
 function closeImg() {
@@ -49,23 +51,21 @@ function left() {
 
     document.getElementById('container_bigImage').innerHTML = `
     <img class="fullImage" src="${imgBack}">
-    </div>
-    `;
+    </div>`;
 }
 
 function right() {
     currentImage++;
 
-    if(currentImage == 0) {
-        currentImage = dogImg.length +1;
+    if(currentImage == dogImg.length) {
+        currentImage = 0;
     }
-    
-    let nextImage = dogImg[currentImage];
+
+     let nextImage = dogImg[currentImage];
 
     document.getElementById('container_bigImage').innerHTML = `
     <img class="fullImage" src="${nextImage}">
-    </div>
-    `;
+    </div>`;
 }
     
 
