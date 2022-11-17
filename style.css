@@ -118,12 +118,35 @@ body {
         }
 
         .fullImage {
-            height: 400px;
+            height: 300px;
             width: 100%;
         }
 
         .imgBox img {
-            height: 400px;
+            height: 300px;
+        }
+
+        .imgBox img:hover {
+            transform: unset;
+        }
+
+        .arrows {
+            top: 230px;
+        }
+    }
+
+    @media(max-width: 450px) {
+        .header {
+            font-size: 1em;
+        }
+
+        .fullImage {
+            height: auto;
+            width: 100%;
+        }
+
+        .imgBox img {
+            height: 300px;
         }
 
         .imgBox img:hover {
